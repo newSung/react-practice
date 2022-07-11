@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/react-practice" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="/main" element={<Main />} />
         <Route path="/settings" element={<Settings />} />
