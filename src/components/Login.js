@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Modal, Button } from "react-bootstrap";
+import body from "../css/test.css"
+
+
 
 
 function Login() {
+
     const [InputId, setId] = useState('');
     const [InputPw, setPw] = useState('');
     const onChangeId = (e) => {
@@ -30,9 +34,9 @@ function Login() {
     const handleShow = () => setShow(true);
 
     return (
-        <div >
-            <Container fluid style={{ padding: 200, paddingTop: 100 }} >
-                <Row style={{ border: 1, borderStyle: "solid", borderColor: "black" }}>
+        <div className="body">
+            <Container fluid >
+                <Row style={{ border: 1, borderStyle: "solid", borderColor: "black", borderRadius: 15 }}>
                     <Col>
                         <Form>
                             <Form.Group className="mb-3" controlId="formGroupId">

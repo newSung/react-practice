@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import body from "../css/test.css"
 
 function Register() {
 
     return (
-        <div>
-            <Container fluid style={{ padding: 200, paddingTop: 100 }} >
+        <div className="body">
+            <Container fluid>
                 <Row style={{ border: 1, borderStyle: "solid", borderColor: "black" }}>
                     <Col>
                         <Form>
