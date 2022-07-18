@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Modal, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import body from "../css/test.css"
 
 
@@ -17,6 +18,7 @@ function Login() {
     }
     const onClickLog = () => {
         if (InputId === 'test' && InputPw === "test") {
+            // <Link to="/main"></Link>
             window.location.href = "/main"
         }
         else {
@@ -26,7 +28,7 @@ function Login() {
 
     }
     const onClickReg = () => {
-        window.location.href = "/register"
+        window.location.href = "/react-practice/register";
     }
 
     const [show, setShow] = useState(false);

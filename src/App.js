@@ -8,7 +8,7 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import Main from "./components/Main"
 import Settings from "./components/Settings"
-import Home from "./components/Home"
+import NewDiary from "./components/NewDiary"
 
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/react-practice" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/react-practice/register" element={<Register />} />
         <Route path="/main" element={<Main />} />
         <Route path="/settings" element={<Settings />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/newdiary" element={<NewDiary />} />
       </Routes>
     </Router>
   )
